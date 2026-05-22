@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background: hsl(216, 12%, 8%);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.5rem;
+
+  color: white;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+
+  background: linear-gradient(
+    180deg,
+    hsl(213, 19%, 18%) 0%,
+    hsl(216, 20%, 12%) 100%
+  );
+
+  border-radius: 1.8rem;
+  padding: 2rem;
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.06);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 2rem 0;
+}
+
+.rating-btn {
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.06);
+
+  color: hsl(217, 12%, 63%);
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.rating-btn:hover {
+  background: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.rating-btn.active {
+  background: white;
+  color: hsl(216, 12%, 8%);
+}
+
+.submit-btn {
+  width: 100%;
+
+  border: none;
+  border-radius: 2rem;
+
+  background: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+
+  padding: 1rem;
+
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: white;
+}
+
+.thank-you {
+  display: none;
+  text-align: center;
+}
+
+.thank-you img {
+  margin-bottom: 1.8rem;
+}
+
+.selected {
+  display: inline-block;
+
+  background: rgba(255,255,255,0.06);
+
+  color: hsl(25, 97%, 53%);
+
+  padding: 0.5rem 1rem;
+
+  border-radius: 2rem;
+
+  margin-bottom: 2rem;
+
+  font-size: 14px;
+}
+
+.thank-you h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 480px) {
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .rating-btn {
+    width: 42px;
+    height: 42px;
+  }
+}
